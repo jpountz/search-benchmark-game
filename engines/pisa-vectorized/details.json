@@ -1,0 +1,9 @@
+[
+  "Written in C++ (fork of PISA with a vectorized query processor).",
+  "Index is read from disk via mmap.",
+  "Doc deltas and frequencies are encoded using SIMD-BP128 with blocks of size 128.",
+  "Disjunctive top-k queries use a vectorized block-max MaxScore algorithm that partitions the document space into windows and scores candidates from the essential lists in batches.",
+  "Conjunctive and single-term top-k queries use ranked AND.",
+  "BM25 scoring.",
+  "Doc IDs are reordered using recursive graph bisection."
+]
